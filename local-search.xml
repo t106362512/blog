@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>[目錄頁] 以 IaC 與 CaC 在 GCP 上自動建立高可用的 K8S 平台，並使用 Grafana, Loki, Prometheus 監測方案</title>
+    <link href="/2021/11/26/IaC-K8S-index/"/>
+    <url>/2021/11/26/IaC-K8S-index/</url>
+    
+    <content type="html"><![CDATA[<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>此頁為技術專欄的目錄頁，會介紹如何以 IaC 與 CaC 在 GCP 上自動建立高可用的 K8S 平台，並使用 Grafana, Loki, Prometheus 監測方案，且會一步步的帶著讀者自動地建立 K8S 平台~</p><p>K8S 是目前很流行的容器編排平台，而當前的微服務及某些工具很多都是透過該平台來實現快速的水平擴展與彈性的部署，並且基於該平台還可以搭配 istio, linkerd 等 service mesh 工具實現像是金絲雀, 藍綠等部署策略來部署應用。<br>但也是因為它的功能強大，造成維運的複雜度增加。因此本期專欄將先從各種基礎元件介紹，並搭配使用 Terraform 這類的 Infrastructure as Code(IaC) 工具在 GCP 上建立要使用的 Infra，接著是使用 Ansible 這種的 Configuration as Code 快速地部署高可用的 K8S 叢集。<br>一般來說建立 K8S 叢集後並不會在沒有監控的情況下使用，因此我們會使用 Grafana, Loki, Prometheus 去監測叢集的狀態，以確保叢集的健康狀態。<br>那麼本期專欄將會以每兩週一次的頻率更新技術專欄並介紹以上的內容，以讓讀者可以了解 Iac, CaC 並在 GCP 上擁有維運和自動化建置 K8S 叢集的能力。</p><h2 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h2><ul><li>學習 K8S 的基本概念</li><li>了解如何作出具備 HA 架構的 K8S 叢集，以及基本的 Container Network Interface</li><li>學習如何基於 Google Cloud Platform 架設出 K8S 叢集</li><li>學習如何在 K8S 上架設一套應用，並使其可被監測</li><li>了解為何要有 IaC, CaC，並且如何透過它解決維運問題以及優化整體部署流程</li><li>學習如何使用 Terrafrom 在 Google Cloud Platform 上自動建立所需主機</li><li>學習如何使用 Ansible 去自動化部署 K8S 叢集</li></ul><h2 id="使用工具與平台"><a href="#使用工具與平台" class="headerlink" title="使用工具與平台"></a>使用工具與平台</h2><ul><li>架設平台<ul><li><a href="https://console.cloud.google.com/">Google Cloud Platform</a></li></ul></li><li>IaC 與 CaC<ul><li><a href="https://www.ansible.com/">Ansible</a></li><li><a href="https://www.terraform.io/">Terraform</a></li></ul></li><li>監控元件<ul><li><a href="https://grafana.com/oss/loki/">Loki</a></li><li><a href="https://grafana.com/oss/grafana/">Grafana</a></li><li><a href="https://prometheus.io/">Prometheus</a></li></ul></li><li>Kubernetes 相關<ul><li><a href="https://kubernetes.io/">Kubernetes</a></li><li><a href="https://github.com/kubernetes/kubeadm">Kubeadm</a></li><li><a href="https://github.com/kubernetes-sigs/kubespray">Kubespray</a></li><li><a href="https://k9scli.io/">K9s</a></li><li><a href="https://helm.sh/">Helm</a></li></ul></li></ul><h2 id="文章目錄"><a href="#文章目錄" class="headerlink" title="文章目錄"></a>文章目錄</h2><ul><li>預計 12/12 更新，主題為 <code>K8S 概念理解</code></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>目錄</tag>
+      
+      <tag>IaC</tag>
+      
+      <tag>K8S</tag>
+      
+      <tag>GCP</tag>
+      
+      <tag>GSDC</tag>
+      
+      <tag>Loki</tag>
+      
+      <tag>Ansible</tag>
+      
+      <tag>Grafana</tag>
+      
+      <tag>Terraform</tag>
+      
+      <tag>Prometheus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>

@@ -1,0 +1,27 @@
+name: Hexo Build and Deploy
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - uses: yrpang/github-actions-hexo@v1.3
+        with:
+          deploykey: ${{secrets.DEPLOY_KEY}}
+          username: "github-actions[bot]"
+          email: "41898282+github-actions[bot]@users.noreply.github.com"
+          # if_update_cloudflare: true
+          # cloudflare_token: ${{secrets.CLOUDFLARE_API_KEY}}
